@@ -1,10 +1,12 @@
 # 📊 Data Governance Starter Kit
 
-**Projet personnel** — Gouvernance data avec Python + Power BI
+**Projet personnel** — Solution de gouvernance data pour les équipes finance
 
-- 🐍 **Python ETL** : Génération données, détection anomalies, scoring qualité
-- 📊 **Power BI Dashboard** : 5 pages, 30 mesures DAX, 588M€ de données  
-- 📸 **Dashboards en action** : Voir ci-dessous
+Permet de **gouverner la qualité des données financières** : détection anomalies, validation règles métier, scoring qualité temps réel.
+
+- 🐍 **Python ETL** : Génération données, détection anomalies (11 règles), scoring qualité
+- 📊 **Power BI Dashboard** : 30+ mesures DAX, KPIs financiers, anomalies détaillées
+- 📈 **Streamlit App** : Visualisation interactive des données et anomalies
 
 ---
 
@@ -31,12 +33,7 @@ streamlit run app/streamlit_app.py
 
 ![Dashboard Power BI](powerbi/Capture%20d'écran%202026-05-31%20030922.png)
 
-**Contient:**
-- Executive Summary (KPIs clés)
-- Qualité & Gouvernance (scores, validité)
-- Anomalies Détaillées (table filtrable)
-- Performance Financière (CA/EBITDA par période)
-- Audit Technique (tables brutes)
+**Tableaux & Mesures** : KPIs financiers (CA, EBITDA), taux validité, anomalies par type/gravité, scoring qualité
 
 ---
 
@@ -72,11 +69,10 @@ streamlit run app/streamlit_app.py
 
 ## 📊 Métriques
 
-- **305** lignes brutes
+- **305** lignes traitées
 - **122** anomalies détectées (21 critiques, 64 majeures, 37 mineures)
-- **236** lignes valides
-- **588M€** CA | **398.88M€** EBITDA
-- **77.38%** taux validité
+- **236** lignes valides après nettoyage
+- **77.38%** taux de validité
 
 ---
 
