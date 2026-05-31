@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Preview Dashboard Finance & Qualité</title>
+<style>
+body{margin:0;background:#f4f7fb;font-family:Segoe UI,Arial,sans-serif;color:#0b1f3a}
+header{padding:24px 32px;background:#0b1f3a;color:white}
+h1{margin:0;font-size:28px} p{margin:6px 0 0;color:#dbe7ff}
+main{padding:24px 32px;display:grid;gap:18px}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.card{background:white;border:1px solid #e5eaf2;border-radius:18px;padding:18px;box-shadow:0 8px 24px rgba(15,23,42,.06)}
+.card h2{font-size:13px;color:#64748b;margin:0 0 8px;text-transform:uppercase;letter-spacing:.04em}
+.metric{font-size:28px;font-weight:800}
+.grid{display:grid;grid-template-columns:1.2fr .8fr;gap:16px}
+.bar-row{display:grid;grid-template-columns:190px 1fr 90px;gap:10px;align-items:center;margin:12px 0;font-size:13px}
+.bar{height:12px;background:#eef2f7;border-radius:999px;overflow:hidden}
+.bar i{display:block;height:100%;background:#ff7f0e;border-radius:999px}
+.bar.blue i{background:#1f77b4}
+.pills{display:flex;gap:10px;flex-wrap:wrap}
+.pill{padding:10px 12px;border-radius:999px;background:#eef2f7}
+.critique{background:#ffe4e4;color:#a30000}
+.majeure{background:#fff0dd;color:#9a4d00}
+.mineure{background:#e7f8ec;color:#146c2e}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th,td{padding:10px;border-bottom:1px solid #e5eaf2;text-align:left}
+th{color:#64748b}
+footer{padding:12px 32px;color:#64748b;font-size:12px}
+</style>
+</head>
+<body>
+<header>
+<h1>Dashboard Finance & Qualité des Données</h1>
+<p>Preview statique à reproduire dans Power BI Desktop avec les fichiers du kit.</p>
+</header>
+<main>
+<section class="kpis">
+<div class="card"><h2>Total CA</h2><div class="metric">587 795 125 €</div></div>
+<div class="card"><h2>Total EBITDA</h2><div class="metric">398 881 291 €</div></div>
+<div class="card"><h2>Marge EBITDA</h2><div class="metric">67.9%</div></div>
+<div class="card"><h2>Anomalies</h2><div class="metric">122</div></div>
+</section>
+<section class="grid">
+<div class="card">
+<h2>Top anomalies par type</h2>
+<div class="bar-row"><span>DOUBLON</span><div class="bar"><i style="width:100.0%"></i></div><b>27</b></div>
+<div class="bar-row"><span>EBITDA_INCOHERENT</span><div class="bar"><i style="width:85.2%"></i></div><b>23</b></div>
+<div class="bar-row"><span>MONTANT_NEGATIF</span><div class="bar"><i style="width:81.5%"></i></div><b>22</b></div>
+<div class="bar-row"><span>VALEUR_MANQUANTE</span><div class="bar"><i style="width:63.0%"></i></div><b>17</b></div>
+<div class="bar-row"><span>PERIODE_INVALIDE</span><div class="bar"><i style="width:33.3%"></i></div><b>9</b></div>
+<div class="bar-row"><span>ENTITE_INCONNUE</span><div class="bar"><i style="width:25.9%"></i></div><b>7</b></div>
+<div class="bar-row"><span>BUSINESS_LINE_INCONNUE</span><div class="bar"><i style="width:22.2%"></i></div><b>6</b></div>
+<div class="bar-row"><span>PROJET_INCONNU</span><div class="bar"><i style="width:22.2%"></i></div><b>6</b></div>
+</div>
+<div class="card">
+<h2>Anomalies par gravité</h2>
+<div class="pills"><div class="pill majeure">Majeure: <b>64</b></div>
+<div class="pill mineure">Mineure: <b>37</b></div>
+<div class="pill critique">Critique: <b>21</b></div></div>
+<br>
+<table>
+<tr><th>Source</th><th>Lignes</th><th>Anomalies</th><th>Score</th></tr>
+<tr><td>donnees_finance_raw</td><td>305</td><td>110</td><td>2.30%</td></tr><tr><td>donnees_projets_raw</td><td>15</td><td>5</td><td>0.00%</td></tr><tr><td>donnees_kpi_raw</td><td>14</td><td>7</td><td>0.00%</td></tr>
+</table>
+</div>
+</section>
+<section class="grid">
+<div class="card">
+<h2>CA par business line</h2>
+<div class="bar-row"><span>BL_SUP</span><div class="bar blue"><i style="width:100.0%"></i></div><b>156 366 009 €</b></div>
+<div class="bar-row"><span>BL_DEV</span><div class="bar blue"><i style="width:99.3%"></i></div><b>155 218 649 €</b></div>
+<div class="bar-row"><span>BL_EXP</span><div class="bar blue"><i style="width:90.9%"></i></div><b>142 104 001 €</b></div>
+<div class="bar-row"><span>BL_CONST</span><div class="bar blue"><i style="width:85.8%"></i></div><b>134 106 466 €</b></div>
+</div>
+<div class="card">
+<h2>Audit qualité</h2>
+<p><b>Taux de validité :</b> 77.38%</p>
+<p><b>Lignes contrôlées :</b> 305</p>
+<p><b>Lignes valides :</b> 236</p>
+<p><b>Lignes invalides :</b> 69</p>
+<p><b>Priorité :</b> traiter les anomalies critiques puis les incohérences EBITDA et les montants négatifs.</p>
+</div>
+</section>
+</main>
+<footer>Généré à partir des CSV fournis — preview HTML, pas un fichier PBIX.</footer>
+</body>
+</html>

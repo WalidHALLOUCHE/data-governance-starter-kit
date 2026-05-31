@@ -1,0 +1,11 @@
+code_projet;nom_projet;code_entite;code_business_line;statut_projet;date_debut;date_fin_prevue
+PRJ_001;Projet solaire Nord;ENT_FR_001;BL_DEV;Actif;2023-01-01;2024-01-01
+PRJ_002;Projet solaire Est;ENT_DE_001;BL_CONST;Actif;2023-01-31;2024-01-31
+PRJ_003;Projet solaire Sud;ENT_ES_001;BL_EXP;En pause;2023-03-02;2024-03-01
+PRJ_004;Projet éolien Ouest;ENT_IT_001;BL_DEV;Actif;2023-04-01;2024-03-31
+PRJ_005;Projet hydro Central;ENT_MA_001;BL_CONST;Clos;2023-05-01;2024-04-30
+PRJ_006;Projet PV Montagne;ENT_FR_001;BL_EXP;Actif;2023-05-31;2024-05-30
+PRJ_007;Projet Énergie Verte;ENT_DE_001;BL_DEV;Actif;2023-06-30;2024-06-29
+PRJ_008;Projet Smart Grid;ENT_ES_001;BL_CONST;Planifié;2023-07-30;2024-07-29
+PRJ_009;Projet Batterie Storage;ENT_IT_001;BL_EXP;Actif;2023-08-29;2024-08-28
+PRJ_010;Projet Transition;ENT_MA_001;BL_SUP;Actif;2023-09-28;2024-09-27

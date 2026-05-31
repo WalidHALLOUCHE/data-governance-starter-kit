@@ -1,0 +1,9 @@
+code_kpi;nom_kpi;domaine;formule;unite;criticite
+KPI_CA;Chiffre d'affaires;Finance;Somme du CA;EUR;Haute
+KPI_OPEX;OPEX;Finance;Somme des charges opérationnelles;EUR;Haute
+KPI_CAPEX;CAPEX;Finance;Somme des investissements;EUR;Haute
+KPI_EBITDA;EBITDA;Finance;CA - OPEX;EUR;Haute
+KPI_MARGE_EBITDA;Marge EBITDA;Finance;EBITDA / CA;%;Moyenne
+KPI_ROI;ROI;Finance;Profit / Investissement Initial;%;Moyenne
+KPI_NPV;NPV;Finance;Somme des cash flows actualisés;EUR;Moyenne
+KPI_IRR;Taux de retour interne;Finance;Taux d'actualisation;%;Moyenne

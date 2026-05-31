@@ -1,0 +1,177 @@
+/*
+Mesures DAX - Dashboard Finance & Qualité des données
+À créer dans Power BI Desktop dans une table dédiée "Mesures".
+Les fichiers préparés du dossier data/ sont recommandés.
+*/
+
+-- =========================
+-- 1. Mesures de volume
+-- =========================
+
+Total Lignes Finance =
+COUNTROWS('donnees_finance_powerbi')
+
+Total Lignes Contrôlées =
+SUM('score_qualite_global_powerbi'[total_lignes_controle])
+
+Lignes Valides =
+SUM('score_qualite_global_powerbi'[lignes_valides])
+
+Lignes Invalides =
+SUM('score_qualite_global_powerbi'[lignes_invalides])
+
+Nombre Sources =
+DISTINCTCOUNT('synthese_qualite_powerbi_ready'[source])
+
+Nombre Entités =
+DISTINCTCOUNT('donnees_finance_powerbi'[code_entite])
+
+Nombre Projets =
+DISTINCTCOUNT('donnees_finance_powerbi'[code_projet])
+
+-- =========================
+-- 2. Mesures anomalies
+-- =========================
+
+Total Anomalies =
+COUNTROWS('rapport_anomalies_powerbi')
+
+Anomalies Critiques =
+CALCULATE(
+    [Total Anomalies],
+    'rapport_anomalies_powerbi'[gravite] = "Critique"
+)
+
+Anomalies Majeures =
+CALCULATE(
+    [Total Anomalies],
+    'rapport_anomalies_powerbi'[gravite] = "Majeure"
+)
+
+Anomalies Mineures =
+CALCULATE(
+    [Total Anomalies],
+    'rapport_anomalies_powerbi'[gravite] = "Mineure"
+)
+
+Taux Anomalies Critiques =
+DIVIDE([Anomalies Critiques], [Total Anomalies], 0)
+
+Taux Anomalies Par Ligne =
+DIVIDE([Total Anomalies], [Total Lignes Contrôlées], 0)
+
+Top Gravité =
+SWITCH(
+    TRUE(),
+    [Anomalies Critiques] > 0, "Critique",
+    [Anomalies Majeures] > 0, "Majeure",
+    [Anomalies Mineures] > 0, "Mineure",
+    "Aucune"
+)
+
+-- =========================
+-- 3. Mesures qualité
+-- =========================
+
+Taux Validité =
+AVERAGE('score_qualite_global_powerbi'[taux_validite_ratio])
+
+Score Qualité Global =
+AVERAGE('score_qualite_global_powerbi'[score_qualite_global_ratio])
+
+Score Qualité Source =
+AVERAGE('synthese_qualite_powerbi_ready'[score_qualite_ratio])
+
+Indice Qualité Simple =
+1 - [Taux Anomalies Par Ligne]
+
+Statut Qualité =
+SWITCH(
+    TRUE(),
+    [Score Qualité Global] < 0.70, "🔴 Critique",
+    [Score Qualité Global] < 0.85, "🟠 À surveiller",
+    "🟢 Conforme"
+)
+
+Statut Validité =
+SWITCH(
+    TRUE(),
+    [Taux Validité] < 0.70, "🔴 Faible",
+    [Taux Validité] < 0.85, "🟠 Moyen",
+    "🟢 Bon"
+)
+
+-- =========================
+-- 4. Mesures financières
+-- =========================
+
+Total CA =
+SUM('donnees_finance_powerbi'[ca_eur])
+
+Total OPEX =
+SUM('donnees_finance_powerbi'[opex_eur])
+
+Total CAPEX =
+SUM('donnees_finance_powerbi'[capex_eur])
+
+Total EBITDA =
+SUM('donnees_finance_powerbi'[ebitda_eur])
+
+Marge EBITDA =
+DIVIDE([Total EBITDA], [Total CA], 0)
+
+Ratio OPEX / CA =
+DIVIDE([Total OPEX], [Total CA], 0)
+
+Ratio CAPEX / CA =
+DIVIDE([Total CAPEX], [Total CA], 0)
+
+Résultat Après CAPEX =
+[Total EBITDA] - [Total CAPEX]
+
+CA Moyen Par Projet =
+DIVIDE([Total CA], [Nombre Projets], 0)
+
+EBITDA Moyen Par Projet =
+DIVIDE([Total EBITDA], [Nombre Projets], 0)
+
+-- =========================
+-- 5. Mesures temporelles
+-- Nécessite une table calendrier reliée à donnees_finance_powerbi[date_periode]
+-- =========================
+
+CA Mois Précédent =
+CALCULATE(
+    [Total CA],
+    DATEADD('Calendrier'[Date], -1, MONTH)
+)
+
+Variation CA MoM =
+[Total CA] - [CA Mois Précédent]
+
+Variation CA MoM % =
+DIVIDE([Variation CA MoM], [CA Mois Précédent], 0)
+
+EBITDA Mois Précédent =
+CALCULATE(
+    [Total EBITDA],
+    DATEADD('Calendrier'[Date], -1, MONTH)
+)
+
+Variation EBITDA MoM % =
+DIVIDE([Total EBITDA] - [EBITDA Mois Précédent], [EBITDA Mois Précédent], 0)
+
+-- =========================
+-- 6. Titres dynamiques
+-- =========================
+
+Titre Période =
+VAR MinDate = MIN('Calendrier'[Date])
+VAR MaxDate = MAX('Calendrier'[Date])
+RETURN
+"Analyse du " & FORMAT(MinDate, "MM/yyyy") & " au " & FORMAT(MaxDate, "MM/yyyy")
+
+Titre Alertes =
+"Anomalies : " & FORMAT([Total Anomalies], "#,##0") &
+" | Critiques : " & FORMAT([Anomalies Critiques], "#,##0") &
+" | Validité : " & FORMAT([Taux Validité], "0.0%")

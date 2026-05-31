@@ -1,0 +1,5 @@
+code_business_line;business_line;description
+BL_DEV;Développement projets;Pipeline et développement
+BL_CONST;Construction;Construction et investissements CAPEX
+BL_EXP;Exploitation;Exploitation et maintenance
+BL_SUP;Fonctions support;Finance, RH, IT et juridique
