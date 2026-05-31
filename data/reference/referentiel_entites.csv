@@ -1,6 +1,0 @@
-code_entite;entite;pays;region;statut_entite
-ENT_FR_001;Entité France;France;Europe;Actif
-ENT_DE_001;Entité Allemagne;Allemagne;Europe;Actif
-ENT_ES_001;Entité Espagne;Espagne;Europe;Actif
-ENT_IT_001;Entité Italie;Italie;Europe;Actif
-ENT_MA_001;Entité Maroc;Maroc;Afrique;Actif

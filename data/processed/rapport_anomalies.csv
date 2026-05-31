@@ -1,0 +1,123 @@
+id_anomalie;source;ligne;periode;code_entite;code_projet;code_business_line;code_kpi;type_anomalie;gravite;description;valeur_detectee;correction_recommandee;date_detection
+ANOM_000001;donnees_finance_raw;8;2023-07;ENT_IT_001;;;;VALEUR_MANQUANTE;Mineure;CA manquant;;Remplir la valeur de CA;2026-05-31 03:32:49
+ANOM_000002;donnees_finance_raw;18;2024-06;ENT_IT_001;;;;VALEUR_MANQUANTE;Majeure;Projet manquant;;Remplir le code projet;2026-05-31 03:32:49
+ANOM_000003;donnees_finance_raw;23;;;;;;PERIODE_INVALIDE;Majeure;Période manquante;;Remplir la période;2026-05-31 03:32:49
+ANOM_000004;donnees_finance_raw;30;2023-01;ENT_XX_999;;;;ENTITE_INCONNUE;Critique;Entité inconnue: ENT_XX_999;;Vérifier contre le référentiel entités;2026-05-31 03:32:49
+ANOM_000005;donnees_finance_raw;31;2024-03;ENT_ES_001;;;;VALEUR_MANQUANTE;Mineure;CA manquant;;Remplir la valeur de CA;2026-05-31 03:32:49
+ANOM_000006;donnees_finance_raw;40;2024-02;ENT_XX_999;;;;ENTITE_INCONNUE;Critique;Entité inconnue: ENT_XX_999;;Vérifier contre le référentiel entités;2026-05-31 03:32:49
+ANOM_000007;donnees_finance_raw;45;2023-05;ENT_FR_001;;;;MONTANT_NEGATIF;Majeure;OPEX négatif: -79157.00509923096;-79157.00509923096;OPEX doit être >= 0;2026-05-31 03:32:49
+ANOM_000008;donnees_finance_raw;45;2023-05;ENT_FR_001;;;;EBITDA_INCOHERENT;Majeure;EBITDA incohérent: 600312.317430349 vs CA-OPEX=1509717.2926159662;600312.317430349;EBITDA devrait être 1509717.2926159662;2026-05-31 03:32:49
+ANOM_000009;donnees_finance_raw;54;2024-04;ENT_IT_001;;;;MONTANT_NEGATIF;Majeure;CA négatif: -428255.79029758216;-428255.79029758216;CA doit être >= 0;2026-05-31 03:32:49
+ANOM_000010;donnees_finance_raw;54;2024-04;ENT_IT_001;;;;EBITDA_INCOHERENT;Majeure;EBITDA incohérent: 2220889.140253001 vs CA-OPEX=-1625491.5277211918;2220889.140253001;EBITDA devrait être -1625491.5277211918;2026-05-31 03:32:49
+ANOM_000011;donnees_finance_raw;56;2024-01;ENT_DE_001;;;;MONTANT_NEGATIF;Majeure;OPEX négatif: -53490.79036037388;-53490.79036037388;OPEX doit être >= 0;2026-05-31 03:32:49
+ANOM_000012;donnees_finance_raw;56;2024-01;ENT_DE_001;;;;EBITDA_INCOHERENT;Majeure;EBITDA incohérent: 3253071.6557347905 vs CA-OPEX=3500223.9801005223;3253071.6557347905;EBITDA devrait être 3500223.9801005223;2026-05-31 03:32:49
+ANOM_000013;donnees_finance_raw;57;2023-01;ENT_ES_001;;;;EBITDA_INCOHERENT;Majeure;EBITDA incohérent: 17350710.438038856 vs CA-OPEX=379990.5921864768;17350710.438038856;EBITDA devrait être 379990.5921864768;2026-05-31 03:32:49
+ANOM_000014;donnees_finance_raw;63;2024-08;ENT_IT_001;;;;VALEUR_MANQUANTE;Mineure;CA manquant;;Remplir la valeur de CA;2026-05-31 03:32:49
+ANOM_000015;donnees_finance_raw;64;2023-05;ENT_ES_001;;BL_UNKNOWN;;BUSINESS_LINE_INCONNUE;Critique;Business line inconnue: BL_UNKNOWN;;Vérifier contre le référentiel business lines;2026-05-31 03:32:49
+ANOM_000016;donnees_finance_raw;65;;;;;;PERIODE_INVALIDE;Majeure;Période manquante;;Remplir la période;2026-05-31 03:32:49
+ANOM_000017;donnees_finance_raw;66;2023-01;ENT_MA_001;;;;MONTANT_NEGATIF;Majeure;CA négatif: -478899.43095354346;-478899.43095354346;CA doit être >= 0;2026-05-31 03:32:49
+ANOM_000018;donnees_finance_raw;66;2023-01;ENT_MA_001;;;;EBITDA_INCOHERENT;Majeure;EBITDA incohérent: 3795136.308998051 vs CA-OPEX=-1618297.0566112516;3795136.308998051;EBITDA devrait être -1618297.0566112516;2026-05-31 03:32:49
+ANOM_000019;donnees_finance_raw;67;2023-12;ENT_XX_999;;;;ENTITE_INCONNUE;Critique;Entité inconnue: ENT_XX_999;;Vérifier contre le référentiel entités;2026-05-31 03:32:49
+ANOM_000020;donnees_finance_raw;75;2023/01/01;;;;;PERIODE_INVALIDE;Majeure;Format période invalide: 2023/01/01;;Format attendu: YYYY-MM;2026-05-31 03:32:49
+ANOM_000021;donnees_finance_raw;78;2024-10;ENT_IT_001;;BL_UNKNOWN;;BUSINESS_LINE_INCONNUE;Critique;Business line inconnue: BL_UNKNOWN;;Vérifier contre le référentiel business lines;2026-05-31 03:32:49
+ANOM_000022;donnees_finance_raw;79;2023-05;ENT_DE_001;;;;VALEUR_MANQUANTE;Mineure;CA manquant;;Remplir la valeur de CA;2026-05-31 03:32:49
+ANOM_000023;donnees_finance_raw;81;2024-09;ENT_ES_001;;;;VALEUR_MANQUANTE;Majeure;Projet manquant;;Remplir le code projet;2026-05-31 03:32:49
+ANOM_000024;donnees_finance_raw;90;2023/01/01;;;;;PERIODE_INVALIDE;Majeure;Format période invalide: 2023/01/01;;Format attendu: YYYY-MM;2026-05-31 03:32:49
+ANOM_000025;donnees_finance_raw;105;2023-08;ENT_ES_001;;;;MONTANT_NEGATIF;Majeure;OPEX négatif: -194754.03659997688;-194754.03659997688;OPEX doit être >= 0;2026-05-31 03:32:49
+ANOM_000026;donnees_finance_raw;105;2023-08;ENT_ES_001;;;;EBITDA_INCOHERENT;Majeure;EBITDA incohérent: 1642117.812774668 vs CA-OPEX=2312774.5159215927;1642117.812774668;EBITDA devrait être 2312774.5159215927;2026-05-31 03:32:49
+ANOM_000027;donnees_finance_raw;106;2024-01;ENT_MA_001;PRJ_999;;;PROJET_INCONNU;Critique;Projet inconnu: PRJ_999;;Vérifier contre le référentiel projets;2026-05-31 03:32:49
+ANOM_000028;donnees_finance_raw;108;2023-05;ENT_ES_001;;;;MONTANT_NEGATIF;Majeure;CA négatif: -275653.96342808736;-275653.96342808736;CA doit être >= 0;2026-05-31 03:32:49
+ANOM_000029;donnees_finance_raw;108;2023-05;ENT_ES_001;;;;EBITDA_INCOHERENT;Majeure;EBITDA incohérent: 874084.4602809355 vs CA-OPEX=-1259838.8753523142;874084.4602809355;EBITDA devrait être -1259838.8753523142;2026-05-31 03:32:49
+ANOM_000030;donnees_finance_raw;109;;;;;;PERIODE_INVALIDE;Majeure;Période manquante;;Remplir la période;2026-05-31 03:32:49
+ANOM_000031;donnees_finance_raw;116;2023-05;ENT_XX_999;;;;ENTITE_INCONNUE;Critique;Entité inconnue: ENT_XX_999;;Vérifier contre le référentiel entités;2026-05-31 03:32:49
+ANOM_000032;donnees_finance_raw;118;2023-08;ENT_ES_001;;;;VALEUR_MANQUANTE;Mineure;CA manquant;;Remplir la valeur de CA;2026-05-31 03:32:49
+ANOM_000033;donnees_finance_raw;129;2023-07;ENT_FR_001;;;;VALEUR_MANQUANTE;Majeure;Projet manquant;;Remplir le code projet;2026-05-31 03:32:49
+ANOM_000034;donnees_finance_raw;130;;;;;;PERIODE_INVALIDE;Majeure;Période manquante;;Remplir la période;2026-05-31 03:32:49
+ANOM_000035;donnees_finance_raw;133;2024-10;ENT_IT_001;;;;MONTANT_NEGATIF;Majeure;CAPEX négatif: -37560.8420064767;-37560.8420064767;CAPEX doit être >= 0;2026-05-31 03:32:49
+ANOM_000036;donnees_finance_raw;134;2024-09;ENT_IT_001;;;;VALEUR_MANQUANTE;Majeure;Projet manquant;;Remplir le code projet;2026-05-31 03:32:49
+ANOM_000037;donnees_finance_raw;142;2024-11;ENT_MA_001;;;;MONTANT_NEGATIF;Majeure;OPEX négatif: -176961.1773971836;-176961.1773971836;OPEX doit être >= 0;2026-05-31 03:32:49
+ANOM_000038;donnees_finance_raw;142;2024-11;ENT_MA_001;;;;EBITDA_INCOHERENT;Majeure;EBITDA incohérent: 938780.266329826 vs CA-OPEX=1599526.1671189386;938780.266329826;EBITDA devrait être 1599526.1671189386;2026-05-31 03:32:49
+ANOM_000039;donnees_finance_raw;143;2023-12;ENT_XX_999;;;;ENTITE_INCONNUE;Critique;Entité inconnue: ENT_XX_999;;Vérifier contre le référentiel entités;2026-05-31 03:32:49
+ANOM_000040;donnees_finance_raw;152;2024-04;ENT_IT_001;;;;EBITDA_INCOHERENT;Majeure;EBITDA incohérent: 14175060.840278922 vs CA-OPEX=2531893.0002166107;14175060.840278922;EBITDA devrait être 2531893.0002166107;2026-05-31 03:32:49
+ANOM_000041;donnees_finance_raw;158;2023-05;ENT_ES_001;;;;MONTANT_NEGATIF;Majeure;OPEX négatif: -84585.37937075285;-84585.37937075285;OPEX doit être >= 0;2026-05-31 03:32:49
+ANOM_000042;donnees_finance_raw;158;2023-05;ENT_ES_001;;;;EBITDA_INCOHERENT;Majeure;EBITDA incohérent: 3549753.9451237684 vs CA-OPEX=3827014.211549512;3549753.9451237684;EBITDA devrait être 3827014.211549512;2026-05-31 03:32:49
+ANOM_000043;donnees_finance_raw;159;2024-06;ENT_MA_001;;BL_UNKNOWN;;BUSINESS_LINE_INCONNUE;Critique;Business line inconnue: BL_UNKNOWN;;Vérifier contre le référentiel business lines;2026-05-31 03:32:49
+ANOM_000044;donnees_finance_raw;165;2023-05;ENT_MA_001;;;;MONTANT_NEGATIF;Majeure;CA négatif: -239123.68316087723;-239123.68316087723;CA doit être >= 0;2026-05-31 03:32:49
+ANOM_000045;donnees_finance_raw;165;2023-05;ENT_MA_001;;;;EBITDA_INCOHERENT;Majeure;EBITDA incohérent: 1771807.4389983094 vs CA-OPEX=-993534.2265310421;1771807.4389983094;EBITDA devrait être -993534.2265310421;2026-05-31 03:32:49
+ANOM_000046;donnees_finance_raw;173;2023-11;ENT_FR_001;;;;EBITDA_INCOHERENT;Majeure;EBITDA incohérent: 19734889.69177397 vs CA-OPEX=1107211.201150681;19734889.69177397;EBITDA devrait être 1107211.201150681;2026-05-31 03:32:49
+ANOM_000047;donnees_finance_raw;184;2024-05;ENT_ES_001;PRJ_999;;;PROJET_INCONNU;Critique;Projet inconnu: PRJ_999;;Vérifier contre le référentiel projets;2026-05-31 03:32:49
+ANOM_000048;donnees_finance_raw;185;2023-08;ENT_XX_999;;;;ENTITE_INCONNUE;Critique;Entité inconnue: ENT_XX_999;;Vérifier contre le référentiel entités;2026-05-31 03:32:49
+ANOM_000049;donnees_finance_raw;186;2023-09;ENT_DE_001;;;;MONTANT_NEGATIF;Majeure;CA négatif: -243120.5403713085;-243120.5403713085;CA doit être >= 0;2026-05-31 03:32:49
+ANOM_000050;donnees_finance_raw;186;2023-09;ENT_DE_001;;;;EBITDA_INCOHERENT;Majeure;EBITDA incohérent: 1272790.7636680913 vs CA-OPEX=-1688116.5859877982;1272790.7636680913;EBITDA devrait être -1688116.5859877982;2026-05-31 03:32:49
+ANOM_000051;donnees_finance_raw;189;2023-08;ENT_DE_001;;;;MONTANT_NEGATIF;Majeure;CA négatif: -132045.93855387004;-132045.93855387004;CA doit être >= 0;2026-05-31 03:32:49
+ANOM_000052;donnees_finance_raw;189;2023-08;ENT_DE_001;;;;EBITDA_INCOHERENT;Majeure;EBITDA incohérent: 1857848.2577216616 vs CA-OPEX=-1873223.6482811044;1857848.2577216616;EBITDA devrait être -1873223.6482811044;2026-05-31 03:32:49
+ANOM_000053;donnees_finance_raw;196;;;;;;PERIODE_INVALIDE;Majeure;Période manquante;;Remplir la période;2026-05-31 03:32:49
+ANOM_000054;donnees_finance_raw;199;2024-01;ENT_DE_001;;;;EBITDA_INCOHERENT;Majeure;EBITDA incohérent: 14453052.550026655 vs CA-OPEX=2995015.283651774;14453052.550026655;EBITDA devrait être 2995015.283651774;2026-05-31 03:32:49
+ANOM_000055;donnees_finance_raw;202;2023-10;ENT_DE_001;;;;MONTANT_NEGATIF;Majeure;CA négatif: -272355.0094647224;-272355.0094647224;CA doit être >= 0;2026-05-31 03:32:49
+ANOM_000056;donnees_finance_raw;202;2023-10;ENT_DE_001;;;;EBITDA_INCOHERENT;Majeure;EBITDA incohérent: 617202.9297631001 vs CA-OPEX=-586965.8146305719;617202.9297631001;EBITDA devrait être -586965.8146305719;2026-05-31 03:32:49
+ANOM_000057;donnees_finance_raw;203;2024-07;ENT_ES_001;PRJ_999;;;PROJET_INCONNU;Critique;Projet inconnu: PRJ_999;;Vérifier contre le référentiel projets;2026-05-31 03:32:49
+ANOM_000058;donnees_finance_raw;204;2023-05;ENT_IT_001;;;;MONTANT_NEGATIF;Majeure;CAPEX négatif: -36467.29680294146;-36467.29680294146;CAPEX doit être >= 0;2026-05-31 03:32:49
+ANOM_000059;donnees_finance_raw;207;2024-08;ENT_DE_001;;;;MONTANT_NEGATIF;Majeure;CAPEX négatif: -56379.18845070873;-56379.18845070873;CAPEX doit être >= 0;2026-05-31 03:32:49
+ANOM_000060;donnees_finance_raw;211;2024-05;ENT_DE_001;;;;VALEUR_MANQUANTE;Mineure;CA manquant;;Remplir la valeur de CA;2026-05-31 03:32:49
+ANOM_000061;donnees_finance_raw;213;2023-01;ENT_DE_001;;BL_UNKNOWN;;BUSINESS_LINE_INCONNUE;Critique;Business line inconnue: BL_UNKNOWN;;Vérifier contre le référentiel business lines;2026-05-31 03:32:49
+ANOM_000062;donnees_finance_raw;214;2023-12;ENT_FR_001;;;;VALEUR_MANQUANTE;Majeure;Projet manquant;;Remplir le code projet;2026-05-31 03:32:49
+ANOM_000063;donnees_finance_raw;217;2024-04;ENT_ES_001;PRJ_999;;;PROJET_INCONNU;Critique;Projet inconnu: PRJ_999;;Vérifier contre le référentiel projets;2026-05-31 03:32:49
+ANOM_000064;donnees_finance_raw;218;2023-08;ENT_ES_001;;;;MONTANT_NEGATIF;Majeure;CA négatif: -143567.33673869257;-143567.33673869257;CA doit être >= 0;2026-05-31 03:32:49
+ANOM_000065;donnees_finance_raw;218;2023-08;ENT_ES_001;;;;EBITDA_INCOHERENT;Majeure;EBITDA incohérent: 2333952.221212874 vs CA-OPEX=-2571860.0578891747;2333952.221212874;EBITDA devrait être -2571860.0578891747;2026-05-31 03:32:49
+ANOM_000066;donnees_finance_raw;219;2023-05;ENT_DE_001;;;;MONTANT_NEGATIF;Majeure;CA négatif: -387249.2304905978;-387249.2304905978;CA doit être >= 0;2026-05-31 03:32:49
+ANOM_000067;donnees_finance_raw;219;2023-05;ENT_DE_001;;;;EBITDA_INCOHERENT;Majeure;EBITDA incohérent: 1704897.0933262748 vs CA-OPEX=-1397004.6161260272;1704897.0933262748;EBITDA devrait être -1397004.6161260272;2026-05-31 03:32:49
+ANOM_000068;donnees_finance_raw;220;2023-10;ENT_MA_001;;;;VALEUR_MANQUANTE;Mineure;CA manquant;;Remplir la valeur de CA;2026-05-31 03:32:49
+ANOM_000069;donnees_finance_raw;224;2023-06;ENT_FR_001;;;;VALEUR_MANQUANTE;Majeure;Projet manquant;;Remplir le code projet;2026-05-31 03:32:49
+ANOM_000070;donnees_finance_raw;225;2023-01;ENT_IT_001;;;;MONTANT_NEGATIF;Majeure;CA négatif: -453682.5853393632;-453682.5853393632;CA doit être >= 0;2026-05-31 03:32:49
+ANOM_000071;donnees_finance_raw;225;2023-01;ENT_IT_001;;;;EBITDA_INCOHERENT;Majeure;EBITDA incohérent: 1371923.6424917309 vs CA-OPEX=-2284200.6832583416;1371923.6424917309;EBITDA devrait être -2284200.6832583416;2026-05-31 03:32:49
+ANOM_000072;donnees_finance_raw;226;;;;;;PERIODE_INVALIDE;Majeure;Période manquante;;Remplir la période;2026-05-31 03:32:49
+ANOM_000073;donnees_finance_raw;234;2024-04;ENT_IT_001;;;;EBITDA_INCOHERENT;Majeure;EBITDA incohérent: 16508773.690471942 vs CA-OPEX=3419473.989512108;16508773.690471942;EBITDA devrait être 3419473.989512108;2026-05-31 03:32:49
+ANOM_000074;donnees_finance_raw;236;2023-03;ENT_DE_001;;;;VALEUR_MANQUANTE;Mineure;CA manquant;;Remplir la valeur de CA;2026-05-31 03:32:49
+ANOM_000075;donnees_finance_raw;239;2024-07;ENT_IT_001;;BL_UNKNOWN;;BUSINESS_LINE_INCONNUE;Critique;Business line inconnue: BL_UNKNOWN;;Vérifier contre le référentiel business lines;2026-05-31 03:32:49
+ANOM_000076;donnees_finance_raw;242;2024-10;ENT_DE_001;;;;VALEUR_MANQUANTE;Mineure;CA manquant;;Remplir la valeur de CA;2026-05-31 03:32:49
+ANOM_000077;donnees_finance_raw;245;2023-03;ENT_DE_001;;;;MONTANT_NEGATIF;Majeure;CAPEX négatif: -93820.57524107156;-93820.57524107156;CAPEX doit être >= 0;2026-05-31 03:32:49
+ANOM_000078;donnees_finance_raw;257;;;;;;PERIODE_INVALIDE;Majeure;Période manquante;;Remplir la période;2026-05-31 03:32:49
+ANOM_000079;donnees_finance_raw;262;2024-04;ENT_MA_001;;;;VALEUR_MANQUANTE;Mineure;CA manquant;;Remplir la valeur de CA;2026-05-31 03:32:49
+ANOM_000080;donnees_finance_raw;269;2024-06;ENT_FR_001;;;;MONTANT_NEGATIF;Majeure;OPEX négatif: -187838.9800459332;-187838.9800459332;OPEX doit être >= 0;2026-05-31 03:32:49
+ANOM_000081;donnees_finance_raw;269;2024-06;ENT_FR_001;;;;EBITDA_INCOHERENT;Majeure;EBITDA incohérent: 756926.5755226859 vs CA-OPEX=1688782.247317818;756926.5755226859;EBITDA devrait être 1688782.247317818;2026-05-31 03:32:49
+ANOM_000082;donnees_finance_raw;274;2023-11;ENT_FR_001;PRJ_999;;;PROJET_INCONNU;Critique;Projet inconnu: PRJ_999;;Vérifier contre le référentiel projets;2026-05-31 03:32:49
+ANOM_000083;donnees_finance_raw;276;2024-08;ENT_ES_001;;;;MONTANT_NEGATIF;Majeure;OPEX négatif: -175994.5970423274;-175994.5970423274;OPEX doit être >= 0;2026-05-31 03:32:49
+ANOM_000084;donnees_finance_raw;276;2024-08;ENT_ES_001;;;;EBITDA_INCOHERENT;Majeure;EBITDA incohérent: 1289062.9742222028 vs CA-OPEX=2114768.1288113925;1289062.9742222028;EBITDA devrait être 2114768.1288113925;2026-05-31 03:32:49
+ANOM_000085;donnees_finance_raw;277;2023-11;ENT_FR_001;;;;MONTANT_NEGATIF;Majeure;OPEX négatif: -120547.85811526784;-120547.85811526784;OPEX doit être >= 0;2026-05-31 03:32:49
+ANOM_000086;donnees_finance_raw;277;2023-11;ENT_FR_001;;;;EBITDA_INCOHERENT;Majeure;EBITDA incohérent: 2247600.733747986 vs CA-OPEX=3938062.1696591917;2247600.733747986;EBITDA devrait être 3938062.1696591917;2026-05-31 03:32:49
+ANOM_000087;donnees_finance_raw;301;2023-03;ENT_ES_001;PRJ_999;;;PROJET_INCONNU;Critique;Projet inconnu: PRJ_999;;Vérifier contre le référentiel projets;2026-05-31 03:32:49
+ANOM_000088;donnees_finance_raw;2;2023-06;ENT_IT_001;;;;DOUBLON;Mineure;Enregistrement dupliqué;;Supprimer l'un des doublons;2026-05-31 03:32:49
+ANOM_000089;donnees_finance_raw;3;2024-08;ENT_IT_001;;;;DOUBLON;Mineure;Enregistrement dupliqué;;Supprimer l'un des doublons;2026-05-31 03:32:49
+ANOM_000090;donnees_finance_raw;4;2024-08;ENT_FR_001;;;;DOUBLON;Mineure;Enregistrement dupliqué;;Supprimer l'un des doublons;2026-05-31 03:32:49
+ANOM_000091;donnees_finance_raw;5;2024-03;ENT_ES_001;;;;DOUBLON;Mineure;Enregistrement dupliqué;;Supprimer l'un des doublons;2026-05-31 03:32:49
+ANOM_000092;donnees_finance_raw;6;2023-06;ENT_DE_001;;;;DOUBLON;Mineure;Enregistrement dupliqué;;Supprimer l'un des doublons;2026-05-31 03:32:49
+ANOM_000093;donnees_finance_raw;15;2024-01;ENT_ES_001;;;;DOUBLON;Mineure;Enregistrement dupliqué;;Supprimer l'un des doublons;2026-05-31 03:32:49
+ANOM_000094;donnees_finance_raw;34;2024-08;ENT_IT_001;;;;DOUBLON;Mineure;Enregistrement dupliqué;;Supprimer l'un des doublons;2026-05-31 03:32:49
+ANOM_000095;donnees_finance_raw;72;2024-01;ENT_FR_001;;;;DOUBLON;Mineure;Enregistrement dupliqué;;Supprimer l'un des doublons;2026-05-31 03:32:49
+ANOM_000096;donnees_finance_raw;73;2024-03;ENT_IT_001;;;;DOUBLON;Mineure;Enregistrement dupliqué;;Supprimer l'un des doublons;2026-05-31 03:32:49
+ANOM_000097;donnees_finance_raw;99;2024-11;ENT_FR_001;;;;DOUBLON;Mineure;Enregistrement dupliqué;;Supprimer l'un des doublons;2026-05-31 03:32:49
+ANOM_000098;donnees_finance_raw;105;2023-08;ENT_ES_001;;;;DOUBLON;Mineure;Enregistrement dupliqué;;Supprimer l'un des doublons;2026-05-31 03:32:49
+ANOM_000099;donnees_finance_raw;149;2023-08;ENT_ES_001;;;;DOUBLON;Mineure;Enregistrement dupliqué;;Supprimer l'un des doublons;2026-05-31 03:32:49
+ANOM_000100;donnees_finance_raw;170;2024-01;ENT_ES_001;;;;DOUBLON;Mineure;Enregistrement dupliqué;;Supprimer l'un des doublons;2026-05-31 03:32:49
+ANOM_000101;donnees_finance_raw;172;2023-05;ENT_MA_001;;;;DOUBLON;Mineure;Enregistrement dupliqué;;Supprimer l'un des doublons;2026-05-31 03:32:49
+ANOM_000102;donnees_finance_raw;238;2024-03;ENT_IT_001;;;;DOUBLON;Mineure;Enregistrement dupliqué;;Supprimer l'un des doublons;2026-05-31 03:32:49
+ANOM_000103;donnees_finance_raw;250;2024-11;ENT_FR_001;;;;DOUBLON;Mineure;Enregistrement dupliqué;;Supprimer l'un des doublons;2026-05-31 03:32:49
+ANOM_000104;donnees_finance_raw;279;2023-05;ENT_MA_001;;;;DOUBLON;Mineure;Enregistrement dupliqué;;Supprimer l'un des doublons;2026-05-31 03:32:49
+ANOM_000105;donnees_finance_raw;295;2024-01;ENT_FR_001;;;;DOUBLON;Mineure;Enregistrement dupliqué;;Supprimer l'un des doublons;2026-05-31 03:32:49
+ANOM_000106;donnees_finance_raw;302;2023-06;ENT_IT_001;;;;DOUBLON;Mineure;Enregistrement dupliqué;;Supprimer l'un des doublons;2026-05-31 03:32:49
+ANOM_000107;donnees_finance_raw;303;2024-08;ENT_IT_001;;;;DOUBLON;Mineure;Enregistrement dupliqué;;Supprimer l'un des doublons;2026-05-31 03:32:49
+ANOM_000108;donnees_finance_raw;304;2024-08;ENT_FR_001;;;;DOUBLON;Mineure;Enregistrement dupliqué;;Supprimer l'un des doublons;2026-05-31 03:32:49
+ANOM_000109;donnees_finance_raw;305;2024-03;ENT_ES_001;;;;DOUBLON;Mineure;Enregistrement dupliqué;;Supprimer l'un des doublons;2026-05-31 03:32:49
+ANOM_000110;donnees_finance_raw;306;2023-06;ENT_DE_001;;;;DOUBLON;Mineure;Enregistrement dupliqué;;Supprimer l'un des doublons;2026-05-31 03:32:49
+ANOM_000111;donnees_projets_raw;5;;;PRJX_004;;;VALEUR_MANQUANTE;Critique;Entité manquante pour le projet;;Remplir le code entité;2026-05-31 03:32:49
+ANOM_000112;donnees_projets_raw;7;;ENT_UNKNOWN;PRJX_006;;;ENTITE_INCONNUE;Critique;Entité inconnue: ENT_UNKNOWN;;Vérifier contre le référentiel entités;2026-05-31 03:32:49
+ANOM_000113;donnees_projets_raw;9;;;PRJX_008;BL_INVALID;;BUSINESS_LINE_INCONNUE;Critique;Business line inconnue: BL_INVALID;;Vérifier contre le référentiel business lines;2026-05-31 03:32:49
+ANOM_000114;donnees_projets_raw;12;;;PRJX_011;;;STATUT_INVALIDE;Majeure;Statut invalide: Inexistant;;Statut doit être parmi: Actif, En pause, Planifié, Clos;2026-05-31 03:32:49
+ANOM_000115;donnees_projets_raw;14;;;PRJX_013;;;DATE_INCOHERENTE;Majeure;Date fin avant date début;2023-12-27 to 2023-09-18;Date fin doit être après date début;2026-05-31 03:32:49
+ANOM_000116;donnees_kpi_raw;4;;;;;KPI_003;KPI_INCOMPLET;Majeure;KPI sans formule;;Remplir la formule du KPI;2026-05-31 03:32:49
+ANOM_000117;donnees_kpi_raw;6;;;;;KPI_005;KPI_INCOMPLET;Majeure;KPI sans unité;;Remplir l'unité du KPI;2026-05-31 03:32:49
+ANOM_000118;donnees_kpi_raw;8;;;;;KPI_007;KPI_INCOMPLET;Critique;KPI critique sans description;;Documenter les KPI critiques;2026-05-31 03:32:49
+ANOM_000119;donnees_kpi_raw;2;;;;;KPI_001;DOUBLON;Mineure;KPI dupliqué;;Supprimer l'un des doublons;2026-05-31 03:32:49
+ANOM_000120;donnees_kpi_raw;3;;;;;KPI_002;DOUBLON;Mineure;KPI dupliqué;;Supprimer l'un des doublons;2026-05-31 03:32:49
+ANOM_000121;donnees_kpi_raw;14;;;;;KPI_001;DOUBLON;Mineure;KPI dupliqué;;Supprimer l'un des doublons;2026-05-31 03:32:49
+ANOM_000122;donnees_kpi_raw;15;;;;;KPI_002;DOUBLON;Mineure;KPI dupliqué;;Supprimer l'un des doublons;2026-05-31 03:32:49

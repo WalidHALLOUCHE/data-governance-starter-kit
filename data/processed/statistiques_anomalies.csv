@@ -1,4 +1,4 @@
-﻿type_anomalie;nombre_anomalies;anomalies_critiques;anomalies_majeures;anomalies_mineures
+type_anomalie;nombre_anomalies;anomalies_critiques;anomalies_majeures;anomalies_mineures
 VALEUR_MANQUANTE;17;1;6;10
 PERIODE_INVALIDE;9;0;9;0
 ENTITE_INCONNUE;7;7;0;0
