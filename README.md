@@ -1,16 +1,34 @@
-# 📊 Data Governance Starter Kit
+# 📊 Tableau de Bord Gouvernance Data & Performance Financière
 
-**Projet personnel** — Solution de gouvernance data pour les équipes finance
+**Projet personnel** — Pilotage financier intégrant le contrôle qualité des données
 
-Permet de **gouverner la qualité des données financières** : détection anomalies, validation règles métier, scoring qualité temps réel.
+**Description** : Dashboard Power BI de gouvernance data et performance financière couvrant le pilotage financier, la qualité des données, la détection d'anomalies, les indicateurs clés (DAX) et l'aide à la décision fiabilisée.
 
-- 🐍 **Python ETL** : Génération données, détection anomalies (11 règles), scoring qualité
-- 📊 **Power BI Dashboard** : 30+ mesures DAX, KPIs financiers, anomalies détaillées
-- 📈 **Streamlit App** : Visualisation interactive des données et anomalies
+## 🎯 Objectif & Portée
+
+**Fiabiliser la prise de décision financière** en garantissant la qualité des données et en détectant les anomalies en temps réel.
+
+- **Pilotage financier** : KPIs, chiffres d'affaires, marges, performance par période
+- **Gouvernance data** : Validation règles métier, scoring qualité, taux de validité
+- **Détection d'anomalies** : 11 règles de contrôle, classification par gravité
+- **Aide à la décision** : Dashboards interactifs et rapports d'audit
 
 ---
 
-## 🚀 Démarrage Rapide
+## � Contexte Métier
+
+Dans un environnement financier, la **qualité des données** conditionne la fiabilité du reporting et la pertinence des décisions stratégiques.
+
+Ce projet démontre :
+- ✅ **Modélisation de données** cohérente (entités, périodes, montants)
+- ✅ **Contrôle qualité automatisé** avec 11 règles métier (validation, détection d'anomalies)
+- ✅ **Gouvernance data** par scoring qualité et suivi des taux de validité
+- ✅ **Pilotage financier** via KPIs fiabilisés (CA, EBITDA, marges)
+- ✅ **Documentation des anomalies** pour audit et correction
+
+---
+
+## �🚀 Démarrage Rapide
 
 ```bash
 # 1. Installer les dépendances
@@ -27,17 +45,21 @@ streamlit run app/streamlit_app.py
 
 ---
 
-## 📊 Power BI Dashboard
+## 📊 Dashboard Power BI - Gouvernance Data & Performance Financière
 
 **Fichier** : `powerbi/Dashboard_Finance_Qualite_Donnees.pbix`
 
 ![Dashboard Power BI](powerbi/Capture%20d'écran%202026-05-31%20030922.png)
 
-**Tableaux & Mesures** : KPIs financiers (CA, EBITDA), taux validité, anomalies par type/gravité, scoring qualité
+### Tableaux & Indicateurs
+- **KPIs Financiers** : Chiffre d'affaires, EBITDA, marges, variations périodiques
+- **Indicateurs de Qualité** : Taux de validité, score qualité global, répartition anomalies
+- **Détection d'Anomalies** : Tableau filtrable par type, gravité, source
+- **Mesures DAX** : 30+ formules pour calculs financiers et indicateurs qualité
 
 ---
 
-## 📈 Dashboard Streamlit
+## 📈 Application Interactive - Visualisation Données
 
 ![Streamlit Dashboard](screenshots/Capture%20d'écran%202026-05-31%20033400.png)
 
@@ -67,25 +89,58 @@ streamlit run app/streamlit_app.py
 
 ---
 
-## 📊 Métriques
+## 📊 Indicateurs Clés - Résultats de Qualité
 
-- **305** lignes traitées
-- **122** anomalies détectées (21 critiques, 64 majeures, 37 mineures)
-- **236** lignes valides après nettoyage
-- **77.38%** taux de validité
+| Métrique | Valeur |
+|----------|--------|
+| Lignes traitées | **305** |
+| Anomalies détectées | **122** (21 critiques, 64 majeures, 37 mineures) |
+| Lignes valides | **236** (77.38% taux de validité) |
+| Règles de contrôle | **11** règles métier |
 
 ---
 
-## 🔍 11 Règles de Qualité
+## 🔍 Règles de Contrôle Qualité (11 Critères)
 
-Entités/Projets invalides · Montants négatifs · EBITDA incohérents · Doublons · Dates invalides · Valeurs manquantes
+Entités invalides · Montants négatifs · EBITDA incohérents · Doublons · Dates invalides · Valeurs manquantes · Statuts invalides · KPI incomplets · Projets inconnus · Business lines inconnues
+
+---
+
+## 💡 Compétences Démontrées
+
+### Power BI & Analytics
+- ✅ **Modélisation sémantique** : Tables, relations, schéma en étoile
+- ✅ **Langage DAX** : 30+ mesures (CALCULATE, SWITCH, DATEADD, agrégations)
+- ✅ **Visualisations** : KPI cards, tables matrice, graphiques interactifs
+- ✅ **Thématisation** : Palettes professionnelles, cohérence visuelle
+
+### Données & Gouvernance
+- ✅ **Qualité data** : Définition et implémentation de règles métier
+- ✅ **Détection anomalies** : Classification par type et gravité
+- ✅ **Scoring qualité** : Algorithme pondéré de fiabilité
+- ✅ **Audit trail** : Traçabilité des anomalies détectées
+
+### Développement & Intégration
+- ✅ **Pipeline ETL** : Extraction, transformation, chargement
+- ✅ **Python** : Pandas, validation données, scoring
+- ✅ **Dashboards interactifs** : Power BI + Streamlit
 
 ---
 
 ## 💻 Technologies
 
-Python 3.10+ · Pandas · Power BI (DAX) · Streamlit
+Python 3.10+ · Pandas · Power BI (DAX, Power Query) · Streamlit
 
 ---
 
-**Prêt pour production ✅**
+## 📌 À Propos
+
+Ce projet démontre une **approche complète de gouvernance data** : de la modélisation au contrôle qualité, en passant par la présentation des indicateurs financiers. 
+
+**Aligné avec les besoins** d'un **Chef de projet Data / Référent déploiement IA** en termes de :
+- Rigueur méthodologique (11 règles, documentation anomalies)
+- Maîtrise outils BI (Power BI, DAX, modélisation)
+- Pilotage par la donnée (KPIs, scoring, tableaux de bord)
+- Gouvernance et fiabilisation du reporting
+
+✅ **Production-ready** — Code fonctionnel, dashboards interactifs, documenté
